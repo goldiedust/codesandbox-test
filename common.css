@@ -1,8 +1,5 @@
 div{
-  border-style:solid;
-  border:10px;
-  border-color: green;
-  color:red;
+  display: inline;
 }
 
 h1{
