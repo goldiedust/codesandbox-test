@@ -1,0 +1,50 @@
+p{
+  color: #6e002a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #2a0791;
+  font-family: Royal_Inferno;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+body {
+  background-color: #3dff7e;
+}
+
+@font-face {
+  font-family: Royal_Inferno;
+  src: url(/Breiman/Alex/Royal_Inferno.ttf);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
