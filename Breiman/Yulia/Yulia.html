@@ -1,8 +1,127 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Yulia</title>
+    <link rel="stylesheet" href="yulia.css" />
+  </head>
   <body>
-    <div>
-      Yulia is awsome!!!
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/Breiman/Yulia/Yulia.html">Yulia</a></li>
+      <li><a href="/Breiman/Alex/Alex.html">Alex</a></li>
+      <li><a href="dima.html">Dima</a></li>
+    </ul>
+    <h1>Yulia</h1>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1/5</div>
+        <img src="hihi.jpg" width=360px height=250px class="center" />
+        <div class="text">Breiman Family</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/5</div>
+        <img src="20190512_133019.jpg" width=360px height=250px class="center" />
+        <div class="text">Alex</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img src="20190603_160455.jpg" width=360px height=250px class="center"/>
+        <div class="text">Yulia</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="IMG_20180627_111323776.jpg" width=360px height=250px class="center"/>
+        <div class="text">Mom</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="dad.hi.jpg" width=360px height=250px class="center"/>
+        <div class="text">Dad</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <div class="writing">
+    <h2>
+      Hi, my name is Yulia. I was born and raised in Israel, holon. When i was
+      10, me and my family moved from Israel to Canada because of my dads work.
+      I like acting, photography, dancing, cooking, baking, and playing sports.
+      I am a very friendly and fun, outgoing person!
+    </h2>
+    <h2>
+      When i was young i used to go to a school called Revivim. I went there 
+      from the age of 5 till the age of ten. At the age of 10, me and my family
+      moved to Canada, where i attended Manoah Steves Elementary School, until
+      the age of 12. Once i graduated elementary school, i went to a high school
+      called "hugh Boyd Secondary". There i am currently in a program called the
+      "incentive" program. The Incentive program is a program for "samrter"
+      people, basically people who want school to be more challenging. In order
+      to get there you must attend an interview, and write an essay. I am also
+      doing grade 10 math, even tho i'm in garde 9. When i was going to high
+      school my parents wanted me to try ou for math 8/9. I took a test, and got
+      in! In garde 8 i did math 8/9, and i got good grades so my teacher
+      recomended me to do grade 10 math, in grade 9. I am now doing math in a
+      classroom full of garde 10. There are also some grade nines, like me they
+      passed math 8/9 with good gardes, and got in.
+    </h2>
+</div>
+
+
+
   </body>
 </html>

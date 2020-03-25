@@ -2,7 +2,7 @@
   "name": "yulia-and-alex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "breiman/yulia/yulia.html",
   "scripts": {
     "start": "serve"
   },
